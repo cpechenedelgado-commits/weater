@@ -1,0 +1,150 @@
+/* Reset y base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: system-ui, sans-serif;
+  background-color: #0f172a; /* fondo de respaldo */
+  color: #e5e7eb;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background 1s ease-in-out;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* importante para centrar verticalmente */
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+/* Formulario */
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0ea5e9;
+}
+
+/* Estado de carga */
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid rgba(31, 41, 51, 0.7);
+  border-top: 5px solid #38bdf8;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 1.5rem auto;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Mensajes de estado */
+.status {
+  margin: 1rem 0;
+  color: #facc15; /* amarillo para destacar */
+  font-weight: bold;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Contenedor del clima */
+.weather {
+  background: rgba(37, 99, 235, 0.8);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  margin-top: 1rem;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.weather:hover {
+  transform: translateY(-5px);
+}
+
+#temperature {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+#description {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+
+#weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0.5rem 0;
+}
+
+/* Toggle Celsius/Fahrenheit */
+.toggle {
+  margin-top: 1rem;
+  background: #38bdf8;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.toggle:hover {
+  background: #0ea5e9;
+}
+
+/* Ocultar elementos */
+.hidden {
+  display: none;
+}
+
