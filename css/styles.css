@@ -1,4 +1,3 @@
-/* Reset y base */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,7 +18,6 @@ body {
   transition: background 1s ease-in-out;
 }
 
-/* Contenedor principal */
 .container {
   max-width: 400px;
   margin: 0 auto;
@@ -32,14 +30,12 @@ body {
   text-align: center;
 }
 
-/* Título */
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
   text-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 
-/* Formulario */
 form {
   display: flex;
   gap: 0.5rem;
@@ -71,7 +67,6 @@ button:hover {
   background-color: #0ea5e9;
 }
 
-/* Estado de carga */
 .loader {
   width: 48px;
   height: 48px;
@@ -86,7 +81,6 @@ button:hover {
   to { transform: rotate(360deg); }
 }
 
-/* Mensajes de estado */
 .status {
   margin: 1rem 0;
   color: #facc15; /* amarillo para destacar */
@@ -127,7 +121,6 @@ button:hover {
   margin: 0.5rem 0;
 }
 
-/* Toggle Celsius/Fahrenheit */
 .toggle {
   margin-top: 1rem;
   background: #38bdf8;
@@ -143,8 +136,8 @@ button:hover {
   background: #0ea5e9;
 }
 
-/* Ocultar elementos */
 .hidden {
   display: none;
 }
+
 
