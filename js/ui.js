@@ -36,7 +36,6 @@ export function renderWeather(data) {
   hideLoading();
 }
 
-// Función para actualizar el fondo según el clima
 export function updateBackground(weatherDesc) {
   let bgImage = '';
 
@@ -58,4 +57,5 @@ export function updateBackground(weatherDesc) {
   document.body.style.backgroundRepeat = 'no-repeat';
   document.body.style.transition = 'background 1s ease-in-out';
 }
+
 
